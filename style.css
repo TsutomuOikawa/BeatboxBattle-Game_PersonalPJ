@@ -144,18 +144,17 @@ html{
 /* ステージ */
 .stage{
   width: 850px;
-  border-radius: 40px 40px 0 0;
+  border-radius: 150px 150px 0 0;
   color: white;
 }
 .stage--before{
   background: linear-gradient(to bottom, rgba(255, 249, 209, 0.7), #322002 80%);
 }
 .stage--after{
-  background: black;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), #322002 90%);
 }
-
 .stage-wrapper{
-  width: 80%;
+  width: 85%;
   height: 100%;
   padding: 20px 0;
   box-sizing: border-box;
@@ -165,10 +164,18 @@ html{
   font-size: 30px;
   color: white;
   line-height: 2;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.10em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.stage_knockDownCount{
+  font-weight: bold;
   text-align: center;
 }
 .stage_contents{
+  margin-top: 20px;
+  line-height: 1.5;
 }
 .contents--center{
   display: flex;
@@ -181,32 +188,38 @@ html{
 
 /* フィールド */
 .field{
-  width: 45%;
-  height: 400px;
+  width: 40%;
+  height: 350px;
   padding: 20px 5px;
 }
 .field--player{
+  width: 35%;
   background: linear-gradient(to bottom, rgba(255, 249, 209, 0.7), #322002 80%)
 }
-.field_introText{
-  line-height: 1.5;
-  text-align: center;
-  margin: 20px 0;
-}
-
 .field_img{
   width: 100%;
   height: 40%;
 }
-
-
+.field_action{
+  display: flex;
+  flex-wrap: wrap;
+}
+.field_introText{
+  line-height: 2;
+  text-align: center;
+  margin: 20px 0;
+}
+.judge{
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
 
 /* ボタン */
 .btn{
-  width: 50%;
+  width: 40%;
   padding: 10px 15px;
   border: none;
-  font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
@@ -216,7 +229,7 @@ html{
 }
 .btn--center{
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 /* フッター */
